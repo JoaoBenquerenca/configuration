@@ -6,9 +6,9 @@ chmod a+x startup.sh
 # create service 
 SERVICE_FILE="/etc/systemd/system/StartupService.service"
 
-echo -e "[Unit]\nDescription=Custom Startup Script\n" > $SERVICE_FILE
+echo -e "[Unit]\nDescription=Startup Script\n" > $SERVICE_FILE
 
-echo -e "[Service]\nExecStart=/home/ubuntu/StartScript.sh\n" >> $SERVICE_FILE
+echo -e "[Service]\nExecStart=$HOME/startup.sh\n" >> $SERVICE_FILE
 
 echo -e "[Install]\nWantedBy=default.target\n" >> $SERVICE_FILE
 
