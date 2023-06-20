@@ -191,3 +191,5 @@ bar {
 
 default_border none
 default_floating_border none
+
+exec_always --no-startup-id $HOME/.config/i3/scripts/startup.sh
