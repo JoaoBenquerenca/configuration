@@ -10,7 +10,7 @@ export TERMINAL=gnome-terminal
 cd installs
 
 # install theme
-./3024-night.sh 
+./dark-pastel.sh
 
 # cleanup
 cd ~
