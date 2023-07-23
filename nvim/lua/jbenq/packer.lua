@@ -1,3 +1,5 @@
+-- Requires packer to be installed. Clone packer repo.
+
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
