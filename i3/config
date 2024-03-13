@@ -192,6 +192,9 @@ bar {
 default_border none
 default_floating_border none
 
+# speed up vim motions
+exec --no-startup-id xset r rate 300 15
+
 exec_always --no-startup-id $HOME/.config/i3/scripts/startup.sh
 exec --no-startup-id picom -b --backend glx --fade-in-step=1 --fade-out-step=1 --fade-delta=0
 exec xinput set-prop "AlpsPS/2 ALPS DualPoint TouchPad" "libinput Tapping Enabled" 1
